@@ -8,7 +8,7 @@
 - Matheus Mazony (matheusmazony@gmail.com / GitHub)
 - João Henrique Bosshard (joao.bosshard@upe.br / matheusmazony-ops)
 - Mateus Borba ()
-- Walisson Diogo ( / Waly16)
+- Walisson Diogo (walisondiogo17@gmail.com / Waly16)
 ---
 
  

@@ -5,9 +5,9 @@
 ## 👥 Integrantes da Equipe
 - Felipe Mota (felipeeufrasiomota@gmail.com / felipinho09)
 - Matheus Mazony (matheusmazony@gmail.com / matheusmazony-ops)
-- João Henrique Bosshard (joao.bosshard@upe.br / matheusmazony-ops)
+- João Henrique Bosshard (joao.bosshard@upe.br / joaobosshard-rgb)
 - Walisson Diogo (walisondiogo17@gmail.com / Waly16)
-- Mateus Borba (mateus.borba@upe.br / joaobosshard-rgb)
+- Mateus Borba (mateus.borba@upe.br / mats07100)
 
 ---
 

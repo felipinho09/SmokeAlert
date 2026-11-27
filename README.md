@@ -107,7 +107,17 @@ O **Smoke Alert** resolve esses três pontos em um único dispositivo:
 4. Clique em **Start the simulation**. No monitor serial devem aparecer a conexão Wi-Fi (rede `Wokwi-GUEST`), a conexão MQTT e as leituras dos sensores a cada segundo.
 5. *(Opcional, hardware real)* Em outra IDE (Arduino IDE ou PlatformIO), instale o core **ESP32 (Espressif)**, as três bibliotecas acima, selecione a placa **ESP32 Dev Module**, ajuste `ssid` e `password` no código e grave na placa.
 
+### ▶️ Circuito funcionando
+
+Demonstração do circuito em funcionamento:
+
+<video src="media/Design_sem_nome_1.mp4" controls width="640"></video>
+
+[Assistir ao vídeo](media/Design_sem_nome_1.mp4)
+
 > **Problemas de compilação no Wokwi:** se aparecerem erros de link como `undefined reference to uartBegin` ou `app_main`, crie um projeto novo pelo template ESP32 e cole os arquivos novamente. Verifique também se não há arquivos `.ino`, `.cpp` ou `.h` duplicados no projeto.
+
+---
 
 ---
 
@@ -136,16 +146,24 @@ Exemplo de telemetria:
 
 Para gerar uma mensagem válida:
 
-```python
-import hmac, hashlib
+```c++
+cd C:\Users\User\Documents\GitHub\SmokeAlert\cliente
+g++ -std=c++17 -O2 -static -o smoke_cli.exe smoke_cli.cpp -lws2_32
 
-def msg(seq, cmd):
-    cmd = cmd.upper()
-    sig = hmac.new(b"SmokeAlert_Chave_Teste_2026",
-                   f"{seq}:{cmd}".encode(), hashlib.sha256).hexdigest().upper()
-    return f"{seq}|{cmd}|{sig}"
+Enviar comandos ao ESP32:
 
-print(msg(1, "PING"))
+powershell
+.\smoke_cli.exe PING
+.\smoke_cli.exe STATUS
+.\smoke_cli.exe INFO
+
+Só gerar a mensagem assinada (sem enviar):
+
+powershell
+$seq = [int][double]::Parse((Get-Date -UFormat %s))
+.\smoke_cli.exe --gerar $seq PING
+.\smoke_cli.exe --gerar ($seq + 1) STATUS
+.\smoke_cli.exe --gerar ($seq + 2) INFO
 ```
 
 ### Roteiro de testes

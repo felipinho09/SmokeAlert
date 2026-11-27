@@ -111,9 +111,9 @@ O **Smoke Alert** resolve esses três pontos em um único dispositivo:
 
 Demonstração do circuito em funcionamento:
 
-<video src="media/Design_sem_nome_1.mp4" controls width="640"></video>
+<video src="Design_sem_nome_1.mp4" controls width="640"></video>
 
-[Assistir ao vídeo](media/Design_sem_nome_1.mp4)
+[Assistir ao vídeo](Design_sem_nome_1.mp4)
 
 > **Problemas de compilação no Wokwi:** se aparecerem erros de link como `undefined reference to uartBegin` ou `app_main`, crie um projeto novo pelo template ESP32 e cole os arquivos novamente. Verifique também se não há arquivos `.ino`, `.cpp` ou `.h` duplicados no projeto.
 

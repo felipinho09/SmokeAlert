@@ -3,9 +3,11 @@
 > Projeto prático de IoT e Segurança da Informação desenvolvido na disciplina de Algoritmos e Estrutura de Dados (CESAR School).
 
 ## 👥 Integrantes da Equipe
-- Nome Completo 1 (E-mail / GitHub)
-- Nome Completo 2 (E-mail / GitHub)
-- Nome Completo 3 (E-mail / GitHub)
+- Felipe Mota (felipeeufrasiomota@gmail.com / felipinho09)
+- Matheus Mazony (matheusmazony@gmail.com / matheusmazony-ops)
+- João Henrique Bosshard (joao.bosshard@upe.br / matheusmazony-ops)
+- Walisson Diogo (walisondiogo17@gmail.com / Waly16)
+- Mateus Borba (mateus.borba@upe.br / joaobosshard-rgb)
 
 ---
 
